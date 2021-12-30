@@ -38,7 +38,7 @@ removeTrack(track) {
   this.setState({ playlistTrack: tracks });
 }
 updatePlaylistName(name){
-  this.setState({playlistName}) 
+  this.setState({playlistName: name}) 
 }
 savePlaylist() {
   
