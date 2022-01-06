@@ -13,7 +13,8 @@ class App extends React.Component {
    super();
 
    this.state = {
-   searchResults: [],
+   searchResults: [ ],
+
    playlistName: 'My Playlist',
    playlistTracks: []
   };
@@ -32,6 +33,8 @@ class App extends React.Component {
       track.push(track);
       this.setState({ playlistTracks: tracks });
    }
+   
+
 removeTrack(track) {
   let tracks = this.state.playlistTracks;
   tracks = tracks.filter(currentTrack => currentTrack.id !== track.id);
